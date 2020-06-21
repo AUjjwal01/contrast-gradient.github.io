@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CONTRASTChecker</title>
+        <meta viewport="width=device-width ,shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="stylesht.css">
+    <style>
+        input{
+            margin:10px;
+            border:none;
+            border-style: hidden;
+            width:30px;
+            height:30px ;
+        }
+        label{
+            background-color: azure;
+            color: grey;
+            padding:10px 20px;
+            border-radius: 1rem;
+        }
+    </style>
+    
+    </head>
+    <body>
+        <div class="header">
+            <a href="#">HOME<i></i></a>
+            <a href="#Gradient">Gradient<i></i></a>
+            <a href="#Contrast">Contrast</a>
+            <a href="#">--> by UJJWAL JAIN</a>
+        </div>
+        <nav class="mobile-nav" style="top:0;">
+            <ul class="hovul"style="display:flex;list-style-type:none;background-color:beige;top: 0;">
+                <li><div class="container" onclick="myfn(this)" >
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                 <div class="nav hov" style="width:100%;">
+                <a href="#" class="link hovul" style="width:100%">Home </a>
+                
+                <a href="#Gradient" class="link hov">Gradient</a>
+                <a href="#Contrast" class="link hov">Contrast</a>
+                <a href="#" class="link ">Developed by UJJWAL JAIN</a>
+
+
+      
+                 </div>
+                 </div>
+               </li>
+              </ul>
+               <script>function myfn(x){
+                  x.classList.toggle("change");
+                }</script>
+        </nav>
+        
+
+
+        <div id="Gradient" class="grad">
+           <br> <br> <h3 style="text-align: center;">Gradient Generator</h3>
+
+           <div style="display:inline;">
+               <div> 
+                   <label>Left-color</label> <br>
+                 <br>  <input type="color" name="color1" class="color1" value="#ea535a">
+                    <label id="lcolor"></label>
+               </div>
+               <br>
+              <div>
+                <label>Right-color</label> <br>
+               <br><input type="color" name="color2" class="color2" value="#f35eb5">
+                <label id="rcolor"></label>
+
+              </div> 
+              <div id="gradient" class="box">
+
+
+              </div>
+           </div> 
+          <br>
+          <br><br><br>
+
+        <div id="Contrast" >
+            <div>       <br><br>    <h3 style="text-align: center;">Contrast Checker</h3>
+
+             <div style="display:inline;margin:0px;">
+                <div><label>Bg-color</label> 
+                  <br> <br> <input type="color" name="color1" class="colorbg" value="#ea535a">
+                    <label id="clabel"></label></div>
+                   <br> <br> <div >
+                        <label>Text-Color </label>
+                       <br> <br> <input type="color" name="color2" class="colortext" value="#000000">
+                        <label id="ctext"></label>
+                    </div>
+                
+            
+            </div>   
+                <div id="contrast"class="box2">
+                    <p style="font-weight:14px;"class="text">
+                   <b>Lorem Ipsum-Check out!-></b> 
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        <script type="text/javascript"  src="script.js"></script>
+      </div>
+
+
+    </body>
+</html>
