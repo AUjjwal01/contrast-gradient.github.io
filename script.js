@@ -6,7 +6,7 @@ var colortext=document.querySelector(".colortext");
 var cont=document.getElementById("contrast");
 //body.style.background="red";
 
-function gradient(){
+const gradient=()=>{
    body.style.background="linear-gradient(to right, "+ color1.value +","+ color2.value +" )";
    document.getElementById("lcolor").innerHTML=color1.value;
    document.getElementById("rcolor").innerHTML=color2.value;
@@ -15,7 +15,7 @@ function gradient(){
 
 }
 
-function contrast(){
+const contrast=()=>{
    
    cont.style.background=colorbg.value;
    cont.style.color=colortext.value;
